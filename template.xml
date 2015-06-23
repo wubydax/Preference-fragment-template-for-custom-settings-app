@@ -20,19 +20,12 @@
         help="The name of the fragment class to create" />
 
     <parameter
-        id="includeXML"
-        name="Create preference XML?"
-        type="boolean"
-        default="true"
-        help="Generate preference XML file for the fragment" />
-
-    <parameter
         id="fragmentName"
         name="Fragment XML Name"
         type="string"
         constraints="xml|nonempty|unique"
         default="fragment_prefs"
-        visibility="includeXML"
+        visibility="true"
         suggest="${classToResource(className)}_prefs"
         help="The name of the xml to create" />
 
